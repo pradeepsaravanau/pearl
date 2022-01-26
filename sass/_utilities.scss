@@ -1,0 +1,26 @@
+.margin-top-large {
+  margin-top: 20rem;
+
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
+}
+.margin-top-huge {
+  margin-top: 25rem;
+}
+.margin-top-med {
+  margin-top: 10rem;
+}
+.margin-bottom {
+  margin-bottom: 4rem;
+}
+
+.color-red {
+  color: #f10808c9;
+}
+.margin-left-medium {
+  margin-left: 3rem;
+}
+.color-grey {
+  color: #333;
+}

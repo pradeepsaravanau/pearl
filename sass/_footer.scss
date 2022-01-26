@@ -1,0 +1,134 @@
+.footer {
+  height: 40rem;
+}
+.footer__bg {
+  position: relative;
+  background-image: url(../img/footer-bg.png);
+  background-position: center bottom;
+  background-size: 95% 100%;
+  background-repeat: no-repeat;
+  padding-top: 17.5rem;
+  max-width: 157rem;
+  margin: auto;
+  @include respond(phone) {
+    height: 100rem;
+  }
+}
+.position {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  @include respond(phone) {
+    top: 20%;
+  }
+}
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //   align-items: center;
+  //   width: 20%;
+  @include respond(phone) {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  &__list {
+    width: 200px;
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
+    &--item {
+      list-style: none;
+      font-size: 2rem;
+      font-family: "Times New Roman", Times, serif;
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+  &__list1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer__img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.box::before {
+  content: "";
+  left: -15px;
+  top: 50%;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.box:hover::before {
+  background-color: red;
+}
+.red::before {
+  background-color: red;
+}
+.customrow {
+  display: flex;
+  flex-direction: row;
+  & > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  @include respond(phone) {
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  & > * {
+    align-self: flex-start;
+  }
+  &__email {
+    color: #ccc;
+    font-size: 1.5rem;
+    background-color: #999;
+    border: none;
+    padding: 1rem 2rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__button {
+    background-color: rgba(#d62424d0, 0.7);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    align-self: center;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.self {
+  align-self: center;
+  @include respond(phone) {
+    align-self: flex-start;
+  }
+}
+.footer__split {
+  display: flex;
+  flex-direction: row;
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+}
+.sliding {
+  background-size: 80% 100%;
+}

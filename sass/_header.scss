@@ -1,0 +1,411 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  overflow-x: clip;
+  margin-bottom: 5rem;
+}
+.relative {
+  position: relative;
+}
+.heading {
+  font-size: 6rem;
+  font-weight: 100;
+
+  line-height: 1.2;
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.readmore {
+  font-size: 3rem;
+  border: none;
+  background: none;
+  font-weight: 200;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Great Vibes", cursive;
+  @include respond(phone) {
+    text-align: center;
+  }
+  @include respond(phone) {
+    margin-top: 2rem;
+    padding: 0 7rem;
+  }
+}
+.design1 {
+  width: 97%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include respond(tab-land) {
+    width: 95%;
+  }
+  @include respond(tab-port) {
+    width: 85%;
+  }
+  @include respond(phone) {
+    top: 50%;
+    left: 50%;
+    width: 30rem;
+  }
+}
+.design-box {
+  position: relative;
+  height: 40rem;
+  @include respond(phone) {
+    height: 20rem;
+    margin: 0 auto;
+  }
+}
+.designtop {
+  position: absolute;
+  top: 14rem;
+  left: 14rem;
+  height: 95%;
+  @include respond(tab-land) {
+    height: 85%;
+  }
+  @include respond(tab-port) {
+    left: 8rem;
+    height: 65%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 25rem;
+    height: 15rem;
+  }
+}
+.designabout {
+  position: absolute;
+  top: 18rem;
+  left: 12rem;
+  height: 75%;
+  @include respond(tab-land) {
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    left: 8rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 25rem;
+    height: 55%;
+  }
+}
+.designour {
+  position: absolute;
+  top: 18rem;
+  left: 25rem;
+  height: 75%;
+  @include respond(tab-land) {
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    left: 18rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 35rem;
+    height: 55%;
+  }
+}
+.designgirl {
+  position: absolute;
+  top: 18rem;
+  left: 25rem;
+  height: 75%;
+  @include respond(tab-land) {
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    left: 18rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 35rem;
+    height: 55%;
+  }
+}
+.designtiming {
+  position: absolute;
+  top: 25rem;
+  left: 30rem;
+  height: 75%;
+  text-align: center;
+  @include respond(tab-land) {
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    left: 18rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 35rem;
+    height: 55%;
+  }
+}
+.designmap {
+  position: absolute;
+  top: 18rem;
+  left: 18rem;
+  height: 65%;
+  @include respond(tab-land) {
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    left: 10rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 25rem;
+    height: 55%;
+  }
+}
+.designtimer {
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-weight: 200;
+}
+.designholiday {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.designclient {
+  position: absolute;
+  top: 18rem;
+  left: 25rem;
+  height: 75%;
+  @include respond(tab-land) {
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    left: 18rem;
+    top: 10rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 35rem;
+    height: 55%;
+  }
+}
+
+.client-h4 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #fff;
+}
+.client-p {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #fff;
+  width: 33%;
+  @include respond(tab-land) {
+    width: 55%;
+  }
+  @include respond(tab-port) {
+    width: 80%;
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+    overflow: hidden;
+  }
+}
+.header-para {
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
+
+  @include respond(phone) {
+    margin-top: 2rem;
+    padding: 0 7rem;
+  }
+}
+
+//contact
+.contact {
+  position: absolute;
+  top: 25rem;
+  left: 30rem;
+  height: 75%;
+  text-align: center;
+  @include respond(tab-land) {
+    top: 19rem;
+    left: 25rem;
+    height: 60%;
+  }
+  @include respond(tab-port) {
+    top: 10rem;
+    left: 20rem;
+    height: 45%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 25rem;
+    height: 55%;
+  }
+
+  &__text,
+  &__textarea {
+    border: solid 1px #ccc;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    &:focus {
+      border: solid 1px #ccc;
+      outline: none;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+    background-color: transparent;
+    @include respond(phone) {
+      width: 30rem;
+    }
+  }
+  &__textarea {
+    resize: none;
+    padding: 3rem 1rem;
+  }
+  &__button {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: #f54764;
+    border-radius: 3rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.design1custom {
+  width: 97%;
+  animation: spin 10s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include respond(tab-land) {
+    width: 100%;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  @include respond(phone) {
+    top: 50%;
+    left: 30%;
+    width: 110%;
+  }
+}
+.lazy {
+  filter: blur(10px);
+}
+.animation {
+  animation: spin 10s infinite;
+}
+.prev {
+  position: relative;
+  z-index: 20;
+
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__white {
+    visibility: visible;
+  }
+  &__red {
+    visibility: hidden;
+  }
+  margin-right: 6rem;
+}
+.next {
+  position: relative;
+  z-index: 20;
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__white {
+    visibility: visible;
+  }
+  &__red {
+    visibility: hidden;
+  }
+}
+.next:hover > .next__red {
+  visibility: visible;
+}
+.next:hover > .next__white {
+  visibility: hidden;
+}
+.prev:hover > .prev__red {
+  visibility: visible;
+}
+.prev:hover > .prev__white {
+  visibility: hidden;
+}
+.buttonsmove {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+.opacity {
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  top: 14rem;
+  left: 14rem;
+  height: 55%;
+  @include respond(tab-land) {
+    height: 85%;
+  }
+  @include respond(tab-port) {
+    left: 8rem;
+    height: 65%;
+  }
+  @include respond(phone) {
+    top: 18rem;
+    left: 25rem;
+    height: 15rem;
+  }
+  transition: all 1s;
+}
+.sliding {
+  position: relative;
+  height: 80rem;
+  @include respond(phone) {
+    height: 20rem;
+    margin: 0 auto;
+  }
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 1);
+}
